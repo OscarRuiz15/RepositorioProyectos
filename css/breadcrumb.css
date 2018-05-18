@@ -1,0 +1,12 @@
+
+.breadcrumb li{
+	list-style: none;
+	float: left;
+	margin-left: 30px;
+	list-style-image:url(../images/right.png);
+}
+
+
+.breadcrumb a:hover{
+	color: #EB1E00;
+}

@@ -1,0 +1,79 @@
+
+.breadcrumb { /* el rectángulo con la lista */
+  list-style: none;
+  margin-top: 10px;
+  overflow: hidden;
+  background: #FFFFFF;
+  position: fixed;
+  width: 77%;
+}
+
+.breadcrumb li { /* cada item de la lista */
+  float: left;
+  background: #FFFFFF;
+}
+
+.breadcrumb li a { /* cada item es un enlace */
+  color: #FFF;
+  display: block;
+  float: left;
+  font-family: Helvetica;
+  text-decoration: none;
+  padding: 5px 0 5px 50px;
+  position: relative; 
+  /* el color de fondo del item que está a la izquierda */
+  background-color: #EB1E00;
+}
+
+.breadcrumb li a:after {
+  content: " "; 
+  display: block; 
+  left: 100%;
+  height: 0;
+  margin-top: -50px; 
+  position: absolute;
+  top: 50%;
+  width: 0; 
+  z-index: 2;
+  /* esto creará el primer triángulo */
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #EB1E00;
+  border-top: 50px solid transparent;
+} 
+
+.breadcrumb li a:before { /* el siguiente enlace */
+content: " "; 
+  display: block; 
+  height: 0;
+  left: 100%;
+  margin-top: -50px; 
+  margin-left: 1px;
+  position: absolute;
+  top: 50%;
+  width: 0; 
+  z-index: 1;
+  /* el color de fondo del segundo item */
+  border-bottom: 50px solid transparent;
+  border-left: 35px solid #DEF;
+  border-top: 50px solid transparent;
+}
+
+/* y los siguientes */
+.breadcrumb li:first-child a {padding-left: 10px;}
+.breadcrumb li:nth-child(2) a {background-color: #EB1E00;}
+.breadcrumb li:nth-child(2) a:after {border-left-color: #EB1E00;}
+.breadcrumb li:nth-child(3) a {background-color: #EB1E00;}
+.breadcrumb li:nth-child(3) a:after {border-left-color: #EB1E00;}
+.breadcrumb li:nth-child(4) a {background-color: #EB1E00;}
+.breadcrumb li:nth-child(4) a:after {border-left-color: #EB1E00;}
+.breadcrumb li:last-child a {
+  background: none repeat scroll 0 0 transparent !important;
+  color: #000000;
+  cursor: default;
+}
+
+/* el efecto hover */
+.breadcrumb li:last-child a:after {border: none;}
+.breadcrumb li:last-child a:before {border: none;}
+.breadcrumb li a:hover {background-color: #D4D4D4;}
+.breadcrumb li a:hover:after {border-left-color: #D4D4D4 !important;}

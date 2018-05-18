@@ -1,0 +1,194 @@
+
+#contenedor{
+    /*border: 1px solid #EB1E00;*/
+    margin-top: 20px;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 15px #aaa;
+}
+
+#contenedor p{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.captura{
+    width: 100%;
+}
+.captura label {
+    margin-top: 15px;
+    width: 8%; 
+    display:inline-block;
+    padding:3px;
+}
+
+.captura input {
+    border-radius: 5px;
+    height:20px; 
+    width:20%;  
+    padding:5px 8px;
+    margin-top: 10px;
+}
+
+#btnBuscar, #btnRegistrar, #btnVaciar{  
+    margin-left: 10px;
+    width: 10%;
+    height: 30px;
+    font: 100% Lucida Sans;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btnBuscar:hover, #btnRegistrar:hover, #btnVaciar:hover{
+    content:'';
+    top: 0px;
+    left: 0px;
+    width: 10%;
+    height: 30px;
+    background: solid #D4D4D4;
+    border-radius: 5px;
+}
+
+#btnRegistrar:hover{
+    color: #FFFFFF;
+    background-image: linear-gradient(to bottom, #cb1e00, #EB1E00);
+}
+
+#btnRegistrar{
+    margin-top: 30px;
+    border: 1px solid(255,255,255,0.3);    
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #EB1E00, #cb1e00);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+#btnVaciar{
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+table {     
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;    
+    margin-top: 35px;   
+    width: 90%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    border-collapse: collapse; 
+}
+
+th {     
+    font-size: 13px;     
+    font-weight: normal;     
+    padding: 8px;     
+    background: #D4D4D4;
+    border-top: 1px solid #000000;    
+    border-bottom: 1px solid #fff; 
+    color: #000; 
+    text-align: center;
+}
+
+td {    
+    padding: 8px;     
+    background: #FFFFFF;     
+    border-bottom: 1px solid #fff;
+    color: #000;    
+    border-top: 1px solid transparent; 
+    text-align: center;
+}
+
+tr:hover td { 
+    background: #f5f5f5; 
+    color: #000; 
+}
+
+#columna2{
+    width: 1000px;
+}
+
+#btnBuscar:hover{
+    background: #D4D4D4;
+}
+
+#btnVaciar:hover{
+    background: #D4D4D4;
+}
+
+#check{
+    width: 15px;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 178%;
+    }
+
+    .captura label{
+        margin-left: -10px;
+        text-align: right;
+        width: 76px;
+        font-size: 15px;
+    }
+
+    .captura input{
+        width: 80px;
+    }
+
+    .captura select{
+        width: 180px;
+    }
+    #btnBuscar{
+        margin-left: 0px;
+        width: 70px;
+    }
+
+    #btnBuscar:hover{
+        margin-left: 0px;
+        width: 70px;
+    }
+
+    #btnRegistrar, #btnVaciar, #btnRegistrar:hover, #btnVaciar:hover{
+        width: 100px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 268%;
+    }
+    .captura label{
+        text-align: right;
+        width: 100px;
+    }
+
+    .captura input{
+        width: 80px;
+    }
+
+    .captura select{
+        width: 100px;
+    }
+    #btnBuscar{
+        margin-left: 0px;
+        width: 70px;
+    }
+
+    #btnBuscar:hover{
+        margin-left: 0px;
+        width: 70px;
+    }
+
+    #btnRegistrar, #btnVaciar, #btnRegistrar:hover, #btnVaciar:hover{
+        width: 100px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

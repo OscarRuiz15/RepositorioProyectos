@@ -1,0 +1,125 @@
+#formulario{
+    margin-top: 30px;
+    border: 1px solid #EB1E00;
+    border-color: #CCCCCC;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 15px #aaa;
+}
+
+#formulario a{
+    color: #000000;
+    text-decoration: none;
+}
+#formulario p{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+hr {
+    height: 1px;
+    margin-left: 10px;
+    border: 0;
+    background-color: #000000;
+}
+
+.captura{
+    margin-top: 20px;
+}
+
+.captura select {
+    border-radius: 5px;
+    height:34px; 
+    width:83%; 
+    padding:5px 8px;
+    margin-left: 8%;
+    margin-right: 10%;
+}
+
+.captura input {
+    border-radius: 5px;
+    height:20px; 
+    width:80%; 
+    padding:5px 8px;
+    margin-left: 8%;
+    margin-right: 10%;
+}
+
+strong{
+    margin-left: 8%;
+    margin-right: 10%;
+}
+
+#btnRegistrar, #btnCancelar{
+    margin-left: 8%;
+    margin-top: 15px;   
+    width: 100px;
+    height: 30px;
+    font: 100% Lucida Sans;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#btnRegistrar{
+    border: 1px solid(255,255,255,0.3);    
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #EB1E00, #cb1e00);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+#btnRegistrar:hover{
+    color: #FFFFFF;
+    background-image: linear-gradient(to bottom, #cb1e00, #EB1E00);
+}
+
+#btnCancelar:hover{
+    background: #D4D4D4;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.table td{
+    width: 50%;
+}
+
+#Asignatura{
+    width: 96%; 
+}
+
+#cbasignatura{
+    width:50%;
+}
+
+#cbgrupo{
+    width:10%;
+}
+
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 140%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 210%;
+    }
+}

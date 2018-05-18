@@ -1,0 +1,330 @@
+/*                          GENERAL                      */
+
+a{
+    color: #000000;
+}
+
+#contenido{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.documento{
+    list-style-image: url("../images/file.png");
+}
+
+body{
+	font: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-left: 20px;
+	margin-right: 20px;
+    padding-top: 125px; /* Relleno superior igual a la altura de la cabecera*/
+    background-color: #FFFFFF;
+}
+
+header{
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    left: 0; /* Posicionamos la cabecera al lado izquierdo */
+    top: 0; /* Posicionamos la cabecera pegada arriba */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    background-color: #FFFFFF;
+}
+
+/**********************************************************************************/
+#usuario{
+    float: right;
+}
+
+.menu_bar {
+    display:none;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav li{
+    text-align: center;
+    line-height: 3rem;
+    position: relative;
+    width: 250px;
+}
+nav li ul{
+    position: absolute;
+}
+
+nav a{
+    color: #fff;
+    display: block;
+    padding: 0 2.5em;
+    text-decoration: none;
+    transition: .4s;
+}
+nav a:hover{
+    background: #c7c7c7;
+}
+
+/*Menu*/    
+.menu{
+    background-color: #EB1E00;
+    display: table;
+    width: 100%;
+    /*display: flex;*/
+}
+
+/*Primer Nivel*/
+.menu > li{
+    float: left;
+}
+
+/*Segundo Nivel*/
+nav li li{
+    background: rgba(235,30,0,1);
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+nav li:hover > ul > li{
+    max-height: 500px;
+    overflow: visible;
+}
+
+/*Tercer Nivel*/
+nav ul ul ul{
+    left: 100%;
+    top: 0;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding-top:80px;
+    }
+
+    .menu_bar {
+        display:block;
+        width:100%;
+        position: fixed;
+        top:0;
+        background:#EB1E00;
+    }
+
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+
+    header nav {
+        width: 100%;
+        height: calc(100% - 80px);
+        position: fixed;
+        right:100%;
+        margin-top: -15px;
+    }
+
+    header nav ul li {
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 100%;
+    }
+
+    header nav ul li a {
+        display: block;
+    }
+
+    header nav ul li:hover .children {
+        display: none;
+    }
+
+    header nav ul li .children {
+        width: 100%;
+        position: relative;
+    }
+
+    header nav ul li .children li a {
+        margin-left:20px;
+    }
+
+    header nav ul li .caret {
+        float: right;
+    }
+
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 112%;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 147%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 218%;
+    }
+}
+
+/*Fin menu*/
+
+#cuerpo{
+	width: 100%;
+	text-align: justify;
+}
+
+#pie{
+    clear: both;
+	background-color: #F1F1F1;
+	margin-top: 20px;
+	width: 100%;
+	border: 1px solid #D4D4D4;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 70%;
+}
+
+#perfil{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;  /* Safari  */
+    -moz-border-radius: 100%;     /* Firefox */
+    background-color: #fff;
+    overflow: hidden;
+    float: right;
+}
+
+/*                          DOCENTE                      */
+#periodos{
+    -webkit-box-shadow: 0 0 15px #aaa;
+    border-radius: 5px;
+    border: 1px solid #D4D4D4; 
+    margin-top: 25px;
+    margin-left: 20%;
+    margin-right: 20%;  
+    /*background-color: #dfd7d7;*/
+    background-color: #E6E6E6;
+}
+
+#periodos_academicos{
+    border-radius: 5px;
+    padding-top: 5px;
+    background-color: #E6E6E6;
+}
+
+#periodos_academicos a{
+    text-decoration: none;
+    color:#000000;
+}
+
+    
+#periodos_academicos li{
+    list-style-type: square; 
+}
+
+/* Ocultar botón radio */
+input[id^="spoiler"]{
+    display: none;
+}
+
+/* Estilo botón clicable */
+input[id^="spoiler"] + label {
+    border-radius: 5px;
+    padding-top: 10px;
+    display: block;
+    width: 90%;
+    background-color: #E6E6E6;
+    cursor: pointer;
+    
+}
+
+input[id^="spoiler"] + label:hover {
+    background-color: #E6E6E6; /*----------------*/
+    color: #EB1E00;
+    
+}
+
+/* Estilo botón cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label {
+    background-color: #E6E6E6;
+    padding-top: 10px;
+    color: #EB1E00;
+}
+
+/* Estilo caja SPOILER (inicialmente oculto) */
+input[id^="spoiler"] ~ .spoiler {
+    width: 90%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+/* Estilo caja SPOILER cuando su INPUT está seleccionado */
+input[id^="spoiler"]:checked + label + .spoiler{
+    height: auto;
+    opacity: 1;
+}
+
+.proy:hover{
+    color: #EB1E00;
+}
+
+@media screen and (max-width: 320px) {
+    #periodos{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #periodos_academicos{
+        margin-left: 0px;
+    }
+
+    input[id^="spoiler"]{
+    display: none;
+}
+
+    /* Estilo botón clicable */
+    input[id^="spoiler"] + label {
+        width: 90%;
+        
+    }
+
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 144%;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 147%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 218%;
+    }
+}

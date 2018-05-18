@@ -1,0 +1,102 @@
+#proyecto{
+    -webkit-box-shadow: 0 0 15px #aaa;
+    border-radius: 5px;
+    border: 1px solid #D4D4D4; 
+    margin-top: 25px;
+    margin-left: 15%;
+    margin-right: 15%;  
+    /*background-color: #dfd7d7;*/
+    background-color: #E6E6E6;
+}
+
+.info_proyecto{
+    border: 1px solid #D4D4D4;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.info_proyecto a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.info_proyecto li{
+    list-style: none;
+    list-style-image: url("../images/user.png");
+}
+
+.btnNuevoEvento{
+    margin-top: 20px;
+    width: 20%;
+    height: 30px;
+    font: 100% Lucida Sans;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid(255,255,255,0.3);    
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #EB1E00, #cb1e00);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btnNuevoEvento:hover{
+    color: #FFFFFF;
+    background-image: linear-gradient(to bottom, #cb1e00, #EB1E00);
+}
+
+.eventos{
+    -webkit-box-shadow: 0 0 15px #aaa;
+    border-radius: 5px;
+    border: 1px solid #D4D4D4; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.eventos h4{
+    width: 100%;
+    text-align: right;
+}
+
+.archivos li{  
+    list-style: none;
+}
+
+.archivos a{
+    color:#000000;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+
+    #proyecto{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .btnNuevoEvento{
+        width: 150px;
+    }
+
+    .btnNuevoEvento:hover{
+        width: 150px;
+    }
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 178%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 268%;
+    }
+    #proyecto{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .btnNuevoEvento{
+        width: 150px;
+    }
+}

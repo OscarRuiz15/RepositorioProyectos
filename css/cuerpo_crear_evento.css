@@ -1,0 +1,98 @@
+#evento{
+	margin-top: 30px;
+	margin-left: 15%;
+	margin-right: 15%;
+     box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 15px #aaa;
+    padding: 25px;
+    border: 1px solid #D4D4D4; 
+}
+
+#evento a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.captura label {
+    width:170px; 
+    display:inline-block;
+    float:left;
+}
+
+.captura input {
+    border-radius: 5px;
+    height:20px; 
+    width: 75.5%; 
+    padding:5px 8px;
+    margin-left: 0px;
+}
+
+label[for="txtnombre"]{
+    margin-top: 7px;
+}
+
+label[for="txtdescripcion"]{
+    width: 100%;
+}
+
+textarea{
+	border-radius: 5px;
+	width:100%; 
+	position: left;
+}
+#myTextEditBox{
+    width: 45px;
+}
+
+.btnCrearEvento{
+    margin-top: 20px;
+    width: 20%;
+    height: 30px;
+    font: 100% Lucida Sans;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid(255,255,255,0.3);    
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, #EB1E00, #cb1e00);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.btnCrearEvento:hover{
+    color: #FFFFFF;
+    background-image: linear-gradient(to bottom, #cb1e00, #EB1E00);
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+
+    #evento{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .btnCrearEvento{
+        width: 150px;
+    }
+
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 178%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    header nav li li{
+        display: block;
+        border-bottom:1px solid rgba(255,255,255,.5);
+        width: 268%;
+    }
+    #evento{
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .btnCrearEvento{
+        width: 150px;
+    }
+}
